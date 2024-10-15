@@ -1,0 +1,60 @@
+/* General App Styling */
+.App {
+  text-align: center;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0; /* Reduced margin */
+}
+
+/* Navigation Styles */
+.nav {
+  background-color: #fff;
+  padding: 0.25rem 1rem; /* Further reduced padding to make it more compact */
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 0.75rem; /* Reduced space between links */
+}
+
+.nav-list li {
+  position: relative;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #000; /* Default color for the text */
+  font-weight: 500;
+  padding: 0.25rem 0.75rem; /* More compact padding around the links */
+  border-radius: 20px;
+  transition: background-color 0.2s ease, color 0.2s ease; /* Smooth color transitions */
+}
+
+/* Hover and Active Styles */
+.nav-list li a:hover,
+.nav-list li a:focus {
+  background-color: #e0e0e0; /* Grey color on hover */
+}
+
+.nav-list li a.active {
+  background-color: #c9bdfb; /* Purple background for active item */
+  color: #fff; /* White text for the active item */
+}
+
+/* Active Hover Override */
+.nav-list li a.active:hover,
+.nav-list li a.active:focus {
+  background-color: #d3d3d3; /* Slightly darker grey when hovering over active item */
+  color: #fff; /* Keep the text white */
+}
+
+.logo{
+  height: 40px;
+}
