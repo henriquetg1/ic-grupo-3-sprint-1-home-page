@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&display=swap');
+
 /* Header Styles */
 .header {
   display: flex;
@@ -8,6 +10,8 @@
   position: relative;
   background-color: #ffffff;
   overflow: hidden;
+  font-family: 'Maven Pro', sans-serif; /* Apply the font here */
+
 }
 
 /* Logo Styles */
@@ -30,6 +34,8 @@
   position: relative;
   z-index: 2;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Maven Pro', sans-serif; /* Apply the font here */
+
 }
 
 /* Navigation List */
@@ -55,7 +61,7 @@
   padding: 0.3rem 0.8rem; 
   border-radius: 15px;
   transition: background-color 0.3s ease, color 0.3s ease; 
-  font-family: 'Inter', sans-serif; 
+  font-family: 'Maven Pro', sans-serif; /* Apply the font here */
   font-size: 0.9rem;
 }
 
