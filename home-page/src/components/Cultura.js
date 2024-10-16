@@ -1,6 +1,5 @@
 import React from 'react';
 import Divider from '@mui/material/Divider';
-import Button from '@mui/material/Button';
 import '../styles/Cultura.css';
 
 function Cultura() {
@@ -13,14 +12,14 @@ function Cultura() {
         <div className="cultura-text">
           <h2>Frase sobre a entidade</h2>
           <p>Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é </p>
+          <button className="botao-sobre-nos">
+            Sobre Nós
+          </button>
         </div>
         <div className="cultura-imagem">
           <img src="../assets/images/trabalho-em-equipe.jpg" alt="Trabalho em equipe" />
         </div>
       </div>
-      <Button variant="contained" color="primary" className="botao-sobre-nos">
-        Sobre Nós
-      </Button>
     </section>
   );
 }

@@ -36,6 +36,22 @@
     color: #333;
 }
 
+.botao-sobre-nos {
+    padding: 10px 20px;
+    background-color: #56bfbf;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 20px;
+    text-align: left; /* Alinhar o botão à esquerda */
+}
+
+.botao-sobre-nos:hover {
+    background-color: #48a8a8;
+}
+
 .cultura-imagem {
     flex: 1;
     background-color: #e0e0e0;
@@ -49,19 +65,4 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.botao-sobre-nos {
-    padding: 10px 20px;
-    background-color: #56bfbf;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 1rem;
-    margin-top: 20px;
-}
-
-.botao-sobre-nos:hover {
-    background-color: #48a8a8;
 }
