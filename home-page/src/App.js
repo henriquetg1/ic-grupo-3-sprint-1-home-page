@@ -1,5 +1,6 @@
 import './styles/App.css';
 import Header from './components/Header';
+import Cultura from './components/Cultura';
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
           <button className="btn-primary">Nosso Trabalho</button>
           <button className="btn-secondary">Contato</button>
         </div>
+      </section>
+      <section className="cultura">
+        <Cultura />
       </section>
     </div>
   );
