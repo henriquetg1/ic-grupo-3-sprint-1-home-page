@@ -6,26 +6,30 @@
   padding: 0.5rem 2rem; 
   height: 60px; 
   position: relative;
-  background-color: #ffffff; /* Light background color */
+  background-color: #ffffff;
+  overflow: hidden;
 }
 
 /* Logo Styles */
 .logo {
-  height: 30px; /* Reduced logo size */
+  height: 50px;
   position: absolute;
-  left: 22rem;
+  left: 19rem;
+  z-index: 2;
 }
 
 /* Navigation Styles */
 .nav {
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 0.3rem 1rem; 
   border-radius: 20px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-  height: 30px; /* Reduced height */
+  height: 30px;
   display: flex;
   align-items: center;
-  margin: 0 auto; /* Center the navigation */
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Navigation List */
@@ -64,12 +68,39 @@
 
 /* Active Link Styles */
 .nav-list li a.active {
-  background-color: #09090b; /* Purple color similar to the image */
+  background-color: #5fcdec;
   color: #fff; 
 }
 
 .nav-list li a.active:hover,
 .nav-list li a.active:focus {
-  background-color: #0e0e10; /* Darker purple on hover */
+  background-color: #2fd7f0;
   color: #fff;
 }
+
+/* Hover effect styles */
+.header-hover-effect {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+}
+
+.header:hover .header-hover-effect {
+  opacity: 1;
+}
+
+.header-hover-effect-gradient {
+  --x: 0px;
+  --y: 0px;
+  background: radial-gradient(
+      500px circle at var(--x) var(--y),
+      rgba(29, 223, 226, 0.15),
+      transparent 10%
+  );
+  width: 100%;
+  height: 100%;
+}
+
