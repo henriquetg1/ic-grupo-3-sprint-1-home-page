@@ -1,11 +1,9 @@
 /* General App Styling */
 .App {
   text-align: center;
-  font-family: Arial, sans-serif;
 }
 
 /* Ensure the entire App has some padding */
 body {
-  margin: 0;
   padding: 0;
 }
