@@ -1,6 +1,7 @@
 import React from 'react';
 import Divider from '@mui/material/Divider';
 import '../styles/Cultura.css';
+import img1 from '../assets/images/trabalho-em-equipe.jpg';
 
 function Cultura() {
   return (
@@ -17,7 +18,7 @@ function Cultura() {
           </button>
         </div>
         <div className="cultura-imagem">
-          <img src="../assets/images/trabalho-em-equipe.jpg" alt="Trabalho em equipe" />
+          <img src={img1} alt="Trabalho em equipe" />
         </div>
       </div>
     </section>
