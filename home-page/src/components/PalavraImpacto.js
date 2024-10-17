@@ -1,27 +1,39 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
+import Typed from 'typed.js'; 
 import '../styles/PalavraImpacto.css';
 
 const PalavraImpacto = () => {
-  const [currentWordIndex, setCurrentWordIndex] = useState(0);
-  const words = ['produzindo', 'inovando', 'aprendendo', 'capacitando'];
+  const typedElement = useRef(null);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
-    }, 4000); 
-    return () => clearInterval(interval);
-  }, [words.length]);
+    const options = {
+      strings: ['produzindo', 'inovando', 'aprendendo', 'capacitando'], 
+      typeSpeed: 50,   
+      backSpeed: 50,   
+      loop: true,      
+      backDelay: 1500, 
+    };
+
+    const typed = new Typed(typedElement.current, options);
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
 
   return (
     <div className='main-content'>
       <div className='main-content__container'>
         <div className='palavras'>
-            <h1><span>Sempre</span> <span>{words[currentWordIndex]}</span></h1>
-            <p>O Insper Coding é uma entidade focada em...</p>
+          <h1>
+            <span>Sempre </span>
+            <span ref={typedElement}></span> {/* Aplicando o typed.js aqui */}
+          </h1>
         </div>
-        <div className="buttons">
-          <button className="btn-primary">Nosso Trabalho</button>
-          <button className="btn-secondary">Contato</button>
+          <p>O Insper Coding é uma entidade focada em...</p>
+        <div class="buttons">
+            <button class="btn-primary">Nosso Trabalho</button>
+            <button class="btn-secondary">Contato</button>
         </div>
       </div>
     </div>
