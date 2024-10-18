@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 64vh;
+    height: 68vh;
     font-family: 'Maven Pro', sans-serif; 
 }
 
@@ -73,7 +73,7 @@
 .btn-secondary {
     background-color: white;
     color: #000000; 
-    border: 2px solid #56bfbf;
+    border: 2px solid #000000;
 }
 
 /* Hover effect to make the button pop */
@@ -83,7 +83,7 @@
 
 /* Arrow icon styling */
 .btn-primary::after, .btn-secondary::after {
-    content: "→";
+    content: ">";
     font-size: 1.5rem;
     transition: transform 0.3s ease-in-out;
 }
