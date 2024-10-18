@@ -9,9 +9,9 @@ function Cultura() {
       <Divider textAlign="center" style={{ margin: '40px 0', fontSize: '26px' }}>
         Nossa Cultura
       </Divider>
+      <h2 className="cultura-titulo">Frase sobre a entidade</h2> {/* Movei o h2 para fora da div cultura-content */}
       <div className="cultura-content">
         <div className="cultura-text">
-          <h2>Frase sobre a entidade</h2>
           <p>Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é </p>
           <button className="botao-sobre-nos">
             Sobre Nós

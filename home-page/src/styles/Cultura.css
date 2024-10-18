@@ -11,17 +11,20 @@
     font-family: 'Maven Pro', sans-serif;
 }
 
-.cultura-section h2 {
+.cultura-titulo {
     font-size: 40px;
     font-family: 'Maven Pro', sans-serif;
     font-weight: normal;
     color: #444444;
+    margin-bottom: 40px;
+    margin-left: 80px;
+    text-align: left;
 }
 
 .cultura-content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* Alinha o texto com o topo da imagem */
+    align-items: flex-start;
     margin-bottom: 40px;
     margin-left: 80px;
     flex-wrap: wrap;
@@ -38,6 +41,11 @@
     color: #333;
 }
 
+.cultura-text p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .botao-sobre-nos {
     padding: 10px 20px;
     background-color: #56bfbf;
@@ -46,7 +54,7 @@
     border-radius: 20px;
     cursor: pointer;
     font-size: 1rem;
-    margin-top: 20px;
+    margin-top: 100px;
     text-align: left;
     font-family: 'Maven Pro', sans-serif;
 }
@@ -56,16 +64,14 @@
 }
 
 .cultura-imagem {
-    flex: 1;
-    background-color: #e0e0e0;
     width: 100%;
-    height: 200px;
+    height: auto;
     max-width: 500px;
     margin-right: 80px;
 }
 
 .cultura-imagem img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
 }
