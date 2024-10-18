@@ -26,7 +26,7 @@
 /* Navigation Styles */
 .nav {
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 0.3rem 1rem; 
+  padding: 0.6rem 2rem; 
   border-radius: 20px;
   height: 30px;
   display: flex;
@@ -35,7 +35,7 @@
   position: relative;
   z-index: 2;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
-  font-family: 'Maven Pro', sans-serif; 
+  font-family: 'Maven Pro', sans-serif;   
 
 }
 
@@ -60,16 +60,16 @@
   color: #333; 
   font-weight: 500;
   padding: 0.3rem 0.8rem; 
-  border-radius: 15px;
+  border-radius: 20px;
   transition: background-color 0.3s ease, color 0.3s ease; 
   font-family: 'Maven Pro', sans-serif; 
-  font-size: 0.9rem;
+  font-size: 1.2rem;
 }
 
 /* Hover styles */
 .nav-list li a:hover,
 .nav-list li a:focus {
-  background-color: #e0e0e0; 
+  background-color: #61dbdb42; 
   color: #000; 
 }
 
@@ -81,7 +81,7 @@
 
 .nav-list li a.active:hover,
 .nav-list li a.active:focus {
-  background-color: #69e4e49e;
+  background-color: #56bfbf;
   color: #fff;
 }
 
@@ -97,17 +97,5 @@
 
 .header:hover .header-hover-effect {
   opacity: 1;
-}
-
-.header-hover-effect-gradient {
-  --x: 0px;
-  --y: 0px;
-  background: radial-gradient(
-      500px circle at var(--x) var(--y),
-      rgba(29, 223, 226, 0.15),
-      transparent 10%
-  );
-  width: 100%;
-  height: 100%;
 }
 
