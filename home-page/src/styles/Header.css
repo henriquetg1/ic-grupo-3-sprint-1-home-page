@@ -75,13 +75,13 @@
 
 /* Active Link Styles */
 .nav-list li a.active {
-  background-color: #5fcdec;
+  background-color: #56bfbf;
   color: #fff; 
 }
 
 .nav-list li a.active:hover,
 .nav-list li a.active:focus {
-  background-color: #2fd7f0;
+  background-color: #69e4e49e;
   color: #fff;
 }
 

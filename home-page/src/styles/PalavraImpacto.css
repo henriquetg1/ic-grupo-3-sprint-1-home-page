@@ -28,12 +28,12 @@
 
 .main-content__container h1 span:last-child {
     display: inline-block;
-    color: #5fcdec !important; 
+    color: #56bfbf !important; 
     text-align: left;
 }
 
 .palavras{
-    color: #5fcdec !important; 
+    color: #56bfbf !important; 
 }
 
 /* Remova o cursor piscante (as barras azuis) */
@@ -65,7 +65,7 @@
 }
 
 .btn-primary {
-    background-color: #5fcdec; 
+    background-color: #56bfbf; 
     color: white;
     border: none;
 }
@@ -73,7 +73,7 @@
 .btn-secondary {
     background-color: white;
     color: #000000; 
-    border: 2px solid #5fcdec;
+    border: 2px solid #56bfbf;
 }
 
 /* Hover effect to make the button pop */
