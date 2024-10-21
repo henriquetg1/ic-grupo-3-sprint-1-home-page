@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Cultura from './components/Cultura';
 import PalavraImpacto from './components/PalavraImpacto';
 import Footer from './components/Footer.js';
+import Valores from './components/Valores';
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
       </section>
       <section className="cultura">
         <Cultura />
+      </section>
+      <section className="valores">
+        <Valores />
       </section>
       <Footer />
     </div>

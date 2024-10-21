@@ -4,26 +4,23 @@ import '../styles/Header.css';
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState('Home');
-  const headerRef = useRef(null);
-  const gradientRef = useRef(null);
+  const [isScrollingUp, setIsScrollingUp] = useState(true);
+  const prevScrollPos = useRef(window.pageYOffset);
 
+  // Detect scroll direction for the nav bar
   useEffect(() => {
-    const header = headerRef.current;
-    const gradient = gradientRef.current;
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      const isScrolledUp = prevScrollPos.current > currentScrollPos;
 
-    const handleMouseMove = (e) => {
-      const { clientX, clientY } = e;
-      const { offsetLeft, offsetTop } = header;
-      const x = clientX - offsetLeft;
-      const y = clientY - offsetTop;
-      gradient.style.setProperty('--x', `${x}px`);
-      gradient.style.setProperty('--y', `${y}px`);
+      setIsScrollingUp(isScrolledUp);
+      prevScrollPos.current = currentScrollPos;
     };
 
-    header.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      header.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -32,9 +29,9 @@ const Header = () => {
   };
 
   return (
-    <header className="header" ref={headerRef}>
+    <header className="header">
       <img src={logo} alt="InsperCoding" className="logo" />
-      <nav className="nav">
+      <nav className={`nav ${isScrollingUp ? 'visible' : 'hidden'}`}>
         <ul className="nav-list">
           <li><a href="#" className={activeLink === 'Home' ? 'active' : ''} onClick={() => handleNavClick('Home')}>Home</a></li>
           <li><a href="#" className={activeLink === 'Serviços' ? 'active' : ''} onClick={() => handleNavClick('Serviços')}>Serviços</a></li>
@@ -44,7 +41,7 @@ const Header = () => {
         </ul>
       </nav>
       <div className="header-hover-effect">
-        <div className="header-hover-effect-gradient" ref={gradientRef}></div>
+        <div className="header-hover-effect-gradient"></div>
       </div>
     </header>
   );
