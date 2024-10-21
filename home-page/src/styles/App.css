@@ -1,6 +1,7 @@
 /* General App Styling */
 .App {
   text-align: center;
+  background-color: #f4f4f4;
 }
 
 /* Ensure the entire App has some padding */
