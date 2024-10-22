@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&display=swap');
+
+.parceiros-section {
+    text-align: center;
+    margin: 50px 0;
+    padding: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.parceiros-titulo {
+    font-size: 40px;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: normal;
+    color: #444444;
+    margin-bottom: 40px;
+    margin-left: 80px;
+    text-align: left;
+}
+
+.parceiros-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    margin-left: 80px;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex: 1;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: left;
+    margin-right: 20px;
+    max-width: 500px;
+    color: #333;
+}
+
+.carousel-container {
+    width: 100vw; /* Ocupar a largura total da viewport */
+    margin-left: calc(-50vw + 50%); /* Alinhar o conteúdo ao centro ocupando 100% */
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+.logo-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Altura da caixa branca */
+    text-align: center;
+    margin: 0 10px; /* Espaço horizontal entre as caixas */
+}
+
+.logo-box img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
