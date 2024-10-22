@@ -34,10 +34,12 @@
 
 /* Carrossel que ocupa toda a largura da página */
 .carousel-container {
-    width: 99.5vw; /* Ocupar a largura total da viewport */
-    margin-left: calc(-50vw + 50%); /* Alinhar ao centro da viewport */
+    width: 100%; /* Ocupar toda a largura disponível */
     background: #f4f4f4;
     padding: 20px 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); /* Garantir centralização */
 }
 
 .logo-box {
