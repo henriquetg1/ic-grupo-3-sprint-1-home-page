@@ -1,0 +1,133 @@
+.case-section {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.case-titulo {
+    font-size: 40px;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: normal;
+    color: #444444;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.case-content {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+
+/* Texto */
+.case-text {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: left;
+    color: #333;
+    margin-bottom: 30px;
+    position: relative;
+    width: 100%;
+    max-width: 50%;
+}
+
+/* Card grande (primeira imagem) */
+.case-card-large {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.case-imagem img:hover {
+    filter: brightness(0.7); /* Escurece a imagem ao passar o mouse */
+  }
+
+.case-imagem {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.case-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.case-imagem:hover img {
+    transform: scale(1.1);
+}
+
+/* Botão sobreposto */
+.read-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: #333;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 2;
+    border: none;
+    cursor: pointer;
+}
+
+.case-imagem:hover .read-button {
+    opacity: 1;
+}
+
+/* Detalhes do card */
+.case-details {
+    text-align: left;
+    padding: 0 8px;
+}
+
+.case-details h3 {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 1.25rem;
+    color: #333;
+    margin: 0 0 8px 0;
+    font-weight: 500;
+}
+
+.case-details p {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Grade para as imagens menores */
+.case-grid-small {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.case-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
