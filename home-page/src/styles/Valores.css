@@ -46,7 +46,6 @@
     font-size: 1rem;
     margin-top: 60px;
     margin-left: -20px;
-    margin-bottom: 60px;
 }
 
 .botao-sobre-nos2:hover {
@@ -193,6 +192,7 @@
     font-family: 'Maven Pro', sans-serif;
     padding: 20px; 
     box-sizing: border-box; 
+    font-weight: 500;
 }
 
 .card-front h3 {

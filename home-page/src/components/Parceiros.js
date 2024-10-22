@@ -29,12 +29,14 @@ const Parceiros = () => {
 
   return (
     <section className="parceiros-section">
+      <div className="parceiros">
       <Divider textAlign="center" style={{ margin: '40px 0', fontSize: '26px' }}>
         Nossos Parceiros
       </Divider>
       <h2 className="parceiros-titulo">Trabalhando Juntos para o Sucesso</h2>
       <div className="parceiros-text">
         <p>Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é </p>
+      </div>
       </div>
       <div className="carousel-container">
         <Slider {...settings}>
@@ -44,7 +46,7 @@ const Parceiros = () => {
                 <img
                   src={logo}
                   alt={`logo-${index}`}
-                />
+                  />
               </div>
             </div>
           ))}

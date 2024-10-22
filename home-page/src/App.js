@@ -5,6 +5,7 @@ import PalavraImpacto from './components/PalavraImpacto';
 import Valores from './components/Valores';
 import Parceiros from './components/Parceiros';
 import Footer from './components/Footer.js';
+import Case from './components/Case.js';
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
       </section>
       <section className="parceiros">
         <Parceiros />
+      </section>
+      <section className="cases">
+        <Case />
       </section>
       <Footer />
     </div>
