@@ -6,6 +6,7 @@ import Valores from './components/Valores';
 import Parceiros from './components/Parceiros';
 import Footer from './components/Footer.js';
 import Case from './components/Case.js';
+import Contato from './components/Contato.js';
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
       <section className="cases">
         <Case />
       </section>
+      <section className="contato">
+        <Contato />
+      </section>  
       <Footer />
     </div>
   );
