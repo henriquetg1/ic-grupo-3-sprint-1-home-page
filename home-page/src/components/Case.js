@@ -5,7 +5,7 @@ import img1 from '../assets/images/case1.jpg';
 import img2 from '../assets/images/case2.jpeg';
 import img3 from '../assets/images/case3.jpg';
 
-function Cultura() {
+function Case() {
   return (
     <section className="case-section">
       <Divider textAlign="center" style={{ margin: '40px 0', fontSize: '26px' }}>
@@ -57,4 +57,4 @@ function Cultura() {
   );
 }
 
-export default Cultura;
+export default Case;
