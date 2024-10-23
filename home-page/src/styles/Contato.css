@@ -1,0 +1,136 @@
+.contact-container { 
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: #1E1E1E;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-breadcrumb {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 3rem;
+}
+
+.nav-breadcrumb a,
+.nav-breadcrumb span {
+    margin: 0 0.5rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+
+.nav-breadcrumb .home-link {
+    margin-left: 0;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    gap: 4rem;
+}
+
+.contact-heading h1 {
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.form-container {
+    background: white;
+    padding: 3rem;  /* Increased padding */
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center; /* Centraliza o texto */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;  /* Increased gap between form groups */
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;  /* Increased gap between items in a row */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;  /* Increased gap between label and input */
+    margin-bottom: 1rem; /* Espaço entre as caixas */
+}
+
+.form-group label {
+    font-size: 0.875rem;
+    color: #374151;
+    font-weight: 500;
+}
+
+.required {
+    color: #ef4444;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 0.7rem;  /* Increased padding */
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    width: 100%;
+    background-color: #fff;  /* Explicit white background */
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;  /* Increased minimum height */
+}
+
+.submit-button {
+    background-color: #1E1E1E;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.submit-button:hover {
+    background-color: #1a0b4b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .contact-heading h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .form-container {
+        padding: 2rem;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .contact-form {
+        gap: 2rem;
+    }
+}
