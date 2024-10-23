@@ -45,7 +45,7 @@
 
 .case-imagem img:hover {
     filter: brightness(0.7); /* Escurece a imagem ao passar o mouse */
-  }
+}
 
 .case-imagem {
     width: 100%;
@@ -61,11 +61,12 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, filter 0.5s ease;
 }
 
 .case-imagem:hover img {
     transform: scale(1.1);
+    filter: brightness(0.7); /* Ensures image stays darker on hover */
 }
 
 /* Botão sobreposto */
@@ -92,8 +93,12 @@
     cursor: pointer;
 }
 
-.case-imagem:hover .read-button {
+/* Keeps the button centered and doesn't change color on hover */
+.case-imagem:hover .read-button,
+.read-button:hover {
     opacity: 1;
+    background-color: white; /* Ensures button color stays white */
+    color: #333; /* Ensures text color stays unchanged */
 }
 
 /* Detalhes do card */
