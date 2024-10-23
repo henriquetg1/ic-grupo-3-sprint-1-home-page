@@ -32,11 +32,22 @@
   display: flex;
   align-items: center;
   margin: 0 auto;
-  position: relative;
+  position: fixed;
+  margin-left: 450px;
   z-index: 2;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
   font-family: 'Maven Pro', sans-serif; 
+  transition: top 0.3s;
+}
 
+/* Navbar hidden state */
+.nav.hidden {
+  top: -60px; /* Move out of view */
+}
+
+/* Navbar visible state */
+.nav.visible {
+  top: 47px; /* Navbar in view */
 }
 
 /* Navigation List */
