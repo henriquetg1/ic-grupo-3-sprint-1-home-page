@@ -35,7 +35,7 @@ const Parceiros = () => {
         </Divider>
         <h2 className="parceiros-titulo">Trabalhando Juntos para o Sucesso</h2>
         <div className="parceiros-text">
-          <p>Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é</p>
+          <p>Estabelecemos parcerias estratégicas com outras entidades e empresas, criando uma rede colaborativa que nos permite entregar soluções inovadoras e impactantes para nossos projetos e membros.</p>
         </div>
       </div>
       <div className="carousel-container">

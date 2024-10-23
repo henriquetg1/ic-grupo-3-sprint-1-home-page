@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/images/ic.jpg';
+import logo from '../assets/images/icteste.png';
 import '../styles/Footer.css';
 import { Instagram, Linkedin, Twitter, Facebook } from 'lucide-react';
 

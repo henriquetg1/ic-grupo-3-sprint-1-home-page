@@ -30,7 +30,10 @@ const PalavraImpacto = () => {
             <span ref={typedElement}></span> {/* Aplicando o typed.js aqui */}
           </h1>
         </div>
-          <p>O Insper Coding é uma entidade focada em...</p>
+        <div className='texto'>
+          <p>O Insper Coding é uma entidade estudantil que desenvolve soluções inovadoras, promovendo</p>
+          <p>colaboração e impacto positivo na comunidade.</p>
+        </div>
         <div class="buttons">
             <button class="btn-primary">Nosso Trabalho</button>
             <button class="btn-secondary">Contato</button>

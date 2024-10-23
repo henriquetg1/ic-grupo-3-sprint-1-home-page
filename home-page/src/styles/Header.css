@@ -25,7 +25,7 @@
 
 /* Navigation Styles */
 .nav {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255);
   padding: 0.3rem 1rem; 
   border-radius: 20px;
   height: 30px;
@@ -42,12 +42,12 @@
 
 /* Navbar hidden state */
 .nav.hidden {
-  top: -60px; /* Move out of view */
+  top: -60px; 
 }
 
 /* Navbar visible state */
 .nav.visible {
-  top: 47px; /* Navbar in view */
+  top: 47px; 
 }
 
 /* Navigation List */

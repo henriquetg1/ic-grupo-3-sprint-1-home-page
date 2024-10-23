@@ -56,9 +56,6 @@ function Valores() {
             ))}
           </div>
         </div>
-        <button className="botao-sobre-nos2">
-          Sobre Nós
-        </button>
       </section>
     );
   }

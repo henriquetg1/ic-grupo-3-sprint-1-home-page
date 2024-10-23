@@ -9,10 +9,10 @@ function Cultura() {
       <Divider textAlign="center" style={{ margin: '40px 0', fontSize: '26px' }}>
         Nossa Cultura
       </Divider>
-      <h2 className="cultura-titulo">Frase sobre a entidade</h2> {/* Movei o h2 para fora da div cultura-content */}
+      <h2 className="cultura-titulo">Desenvolvendo o Futuro da Tecnologia</h2> {/* Movei o h2 para fora da div cultura-content */}
       <div className="cultura-content">
         <div className="cultura-text">
-          <p>Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é Insper Coding é </p>
+          <p>No Insper Coding, capacitamos nossos membros para se tornarem desenvolvedores excepcionais, líderes inovadores e comunicadores eficazes. Através de projetos reais, colaboramos para criar soluções tecnológicas que fazem a diferença, preparando nossos membros para o mercado de trabalho e os desafios do futuro. </p>
           <button className="botao-sobre-nos">
             Sobre Nós
           </button>
