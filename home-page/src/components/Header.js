@@ -7,13 +7,16 @@ const Header = () => {
   const [isScrollingUp, setIsScrollingUp] = useState(true);
   const prevScrollPos = useRef(window.pageYOffset);
 
-  // Detect scroll direction for the nav bar
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
-      const isScrolledUp = prevScrollPos.current > currentScrollPos;
+      
+      if (prevScrollPos.current > currentScrollPos) {
+        setIsScrollingUp(true);  // Show navbar
+      } else {
+        setIsScrollingUp(false);  // Hide navbar
+      }
 
-      setIsScrollingUp(isScrolledUp);
       prevScrollPos.current = currentScrollPos;
     };
 
@@ -31,6 +34,7 @@ const Header = () => {
   return (
     <header className="header">
       <img src={logo} alt="InsperCoding" className="logo" />
+      {/* Add class based on scroll direction */}
       <nav className={`nav ${isScrollingUp ? 'visible' : 'hidden'}`}>
         <ul className="nav-list">
           <li><a href="#" className={activeLink === 'Home' ? 'active' : ''} onClick={() => handleNavClick('Home')}>Home</a></li>
